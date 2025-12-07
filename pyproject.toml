@@ -1,0 +1,14 @@
+[project]
+name = "steam-recsys-api"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.124.0",
+    "steam-content-based-recsys",
+    "uvicorn>=0.38.0",
+]
+
+[tool.uv.sources]
+steam-content-based-recsys = { git = "https://github.com/Maksim-Goncharovskiy/steam-content-based-recsys.git" }
